@@ -53,6 +53,7 @@ JugChallenge.prototype.pourIntoFiveLitreJug = function() {
 };
 
 JugChallenge.prototype.pourIntoThreeLitreJug = function() {
-  this.fillThreeLitreJug();
-  this._fiveLitreJug -= this._threeLitreJug;
+  var litresTransfer = this.MAX_THREE_LITRE_CAPACITY - this._threeLitreJug;
+  this._threeLitreJug += litresTransfer;
+  this._fiveLitreJug -= litresTransfer;
 };
