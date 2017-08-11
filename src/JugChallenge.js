@@ -1,8 +1,10 @@
 'use strict';
 
 function JugChallenge() {
-  this._threeLitreJug = 0
-  this._fiveLitreJug = 0
+  this.MAX_THREE_LITRE_CAPACITY = 3;
+  this.MAX_FIVE_LITRE_CAPACITY = 5;
+  this._threeLitreJug = 0;
+  this._fiveLitreJug = 0;
 }
 
 JugChallenge.prototype.weighThreeLitreJug = function() {
