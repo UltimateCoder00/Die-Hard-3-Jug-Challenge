@@ -36,3 +36,11 @@ JugChallenge.prototype.isThreeLitreJugFull = function() {
 JugChallenge.prototype.isFiveLitreJugFull = function() {
   return this._fiveLitreJug == 5;
 };
+
+JugChallenge.prototype.isThreeLitreJugEmpty = function() {
+  return this._threeLitreJug == 0;
+};
+
+JugChallenge.prototype.isFiveLitreJugEmpty = function() {
+  return this._fiveLitreJug == 0;
+};
