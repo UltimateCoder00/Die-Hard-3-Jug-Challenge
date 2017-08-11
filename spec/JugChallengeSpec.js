@@ -80,7 +80,7 @@ describe('JugChallenge', function() {
     });
 
     it('Pour from 5 litre jug to 3 litre jug', function() {
-      jugChallenge.fillfiveLitreJug();
+      jugChallenge.fillFiveLitreJug();
       jugChallenge.pourIntoThreeLitreJug();
       expect(jugChallenge.isThreeLitreJugFull()).toBeTruthy();
       expect(jugChallenge.weighFiveLitreJug()).toEqual(2);
