@@ -42,4 +42,18 @@ describe('JugChallenge', function() {
       expect(jugChallenge.weighFiveLitreJug()).toEqual(0);
     });
   });
+
+  describe('Are the Jugs Full?', function() {
+    it('Check if 3 Litre Jug is full', function() {
+      expect(jugChallenge.isThreeLitreJugFull()).toBeFalsy();
+      jugChallenge.fillThreeLitreJug();
+      expect(jugChallenge.isThreeLitreJugFull()).toBeTruthy();
+    });
+
+    it('Check if 5 Litre Jug is full', function() {
+      expect(jugChallenge.isFiveLitreJugFull()).toBeFalsy();
+      jugChallenge.fillFiveLitreJug();
+      expect(jugChallenge.isFiveLitreJugFull()).toBeTruthy();
+    });
+  });
 });
