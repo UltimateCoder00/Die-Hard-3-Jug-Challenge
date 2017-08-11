@@ -28,4 +28,18 @@ describe('JugChallenge', function() {
       expect(jugChallenge.weighFiveLitreJug()).toEqual(5);
     });
   });
+
+  describe('Empty Jugs', function() {
+    it('Empty 3 Litre Jug', function() {
+      jugChallenge.fillThreeLitreJug();
+      jugChallenge.emptyThreeLitreJug();
+      expect(jugChallenge.weighThreeLitreJug()).toEqual(0);
+    });
+
+    it('Empty 5 Litre Jug', function() {
+      jugChallenge.fillFiveLitreJug();
+      jugChallenge.emptyFiveLitreJug();
+      expect(jugChallenge.weighFiveLitreJug()).toEqual(0);
+    });
+  });
 });
