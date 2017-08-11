@@ -77,6 +77,8 @@ describe('JugChallenge', function() {
       jugChallenge.pourIntoFiveLitreJug();
       expect(jugChallenge.isThreeLitreJugEmpty()).toBeTruthy();
       expect(jugChallenge.weighFiveLitreJug()).toEqual(3);
+
+
     });
 
     it('Pour from 5 litre jug to 3 litre jug', function() {
@@ -84,6 +86,21 @@ describe('JugChallenge', function() {
       jugChallenge.pourIntoThreeLitreJug();
       expect(jugChallenge.isThreeLitreJugFull()).toBeTruthy();
       expect(jugChallenge.weighFiveLitreJug()).toEqual(2);
+    });
+
+    it('Pour a combination from one jug to the other', function() {
+      jugChallenge.fillThreeLitreJug();
+      jugChallenge.fillFiveLitreJug();
+      jugChallenge.pourIntoFiveLitreJug();
+      expect(jugChallenge.isThreeLitreJugFull()).toBeTruthy();
+      expect(jugChallenge.isFiveLitreJugFull()).toBeTruthy();
+
+      jugChallenge.emptyThreeLitreJug();
+      jugChallenge.pourIntoThreeLitreJug();
+      jugChallenge.emptyFiveLitreJug();
+      jugChallenge.pourIntoFiveLitreJug();
+      expect(jugChallenge.weighThreeLitreJug()).toEqual(0);
+      expect(jugChallenge.weighFiveLitreJug()).toEqual(3);
     });
   });
 });
