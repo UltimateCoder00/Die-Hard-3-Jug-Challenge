@@ -44,3 +44,8 @@ JugChallenge.prototype.isThreeLitreJugEmpty = function() {
 JugChallenge.prototype.isFiveLitreJugEmpty = function() {
   return this._fiveLitreJug == 0;
 };
+
+JugChallenge.prototype.pourIntoFiveLitreJug = function() {
+  this._fiveLitreJug += this._threeLitreJug;
+  this.emptyThreeLitreJug();
+};
