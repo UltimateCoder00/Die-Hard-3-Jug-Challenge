@@ -62,7 +62,15 @@ JugChallenge.prototype.pourIntoFiveLitreJug = function() {
 };
 
 JugChallenge.prototype.pourIntoThreeLitreJug = function() {
-  var litresTransfer = this.MAX_THREE_LITRE_CAPACITY - this._threeLitreJug;
+  var availableSpaceInThreeLitreJug = this.MAX_THREE_LITRE_CAPACITY - this._threeLitreJug;
+  var litresTransfer = 0;
+
+  if (this._fiveLitreJug <= availableSpaceInThreeLitreJug) {
+    litresTransfer = this._fiveLitreJug;
+  } else {
+    litresTransfer = availableSpaceInThreeLitreJug;
+  }
+
   this._threeLitreJug += litresTransfer;
   this._fiveLitreJug -= litresTransfer;
 };
