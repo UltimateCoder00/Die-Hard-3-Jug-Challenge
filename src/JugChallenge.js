@@ -12,3 +12,11 @@ JugChallenge.prototype.weighThreeLitreJug = function() {
 JugChallenge.prototype.weighFiveLitreJug = function() {
   return this._fiveLitreJug;
 };
+
+JugChallenge.prototype.fillThreeLitreJug = function() {
+  this._threeLitreJug = 3;
+};
+
+JugChallenge.prototype.fillFiveLitreJug = function() {
+  this._fiveLitreJug = 5;
+};
