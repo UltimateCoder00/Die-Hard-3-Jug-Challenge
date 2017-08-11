@@ -20,3 +20,11 @@ JugChallenge.prototype.fillThreeLitreJug = function() {
 JugChallenge.prototype.fillFiveLitreJug = function() {
   this._fiveLitreJug = 5;
 };
+
+JugChallenge.prototype.emptyThreeLitreJug = function() {
+  this._threeLitreJug = 0;
+};
+
+JugChallenge.prototype.emptyFiveLitreJug = function() {
+  this._fiveLitreJug = 0;
+};
