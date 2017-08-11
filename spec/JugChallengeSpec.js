@@ -78,5 +78,12 @@ describe('JugChallenge', function() {
       expect(jugChallenge.isThreeLitreJugEmpty()).toBeTruthy();
       expect(jugChallenge.weighFiveLitreJug()).toEqual(3);
     });
+
+    it('Pour from 5 litre jug to 3 litre jug', function() {
+      jugChallenge.fillfiveLitreJug();
+      jugChallenge.pourIntoThreeLitreJug();
+      expect(jugChallenge.isThreeLitreJugFull()).toBeTruthy();
+      expect(jugChallenge.weighFiveLitreJug()).toEqual(2);
+    });
   });
 });
