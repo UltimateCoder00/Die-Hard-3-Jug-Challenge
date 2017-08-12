@@ -3,5 +3,6 @@ $( document ).ready(function() {
 
   $( "#homepage-content" ).click(function( event ) {
     $( this ).hide();
+    $( "#challenge-content" ).show();
   });
 });
