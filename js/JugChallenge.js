@@ -12,4 +12,9 @@ $( document ).ready(function() {
     $( "#challenge-play-content" ).hide();
     $( "#boom-content" ).show();
   });
+
+  $( "#tryagain-button" ).click(function( event ) {
+    $( "#boom-content" ).hide();
+    $( "#challenge-play-content" ).show();
+  });
 });
