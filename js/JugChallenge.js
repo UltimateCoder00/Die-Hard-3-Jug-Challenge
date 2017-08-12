@@ -9,18 +9,34 @@ $( document ).ready(function() {
   });
 
   $( "#scale-button" ).click(function( event ) {
-    $( document.body ).removeAttr("bgcolor");
-    $( document.body ).attr("background","./images/boom.png");
-    $( "#challenge-content" ).hide();
-    $( "#homepage-content" ).show();
-    $( "#challenge-play-content" ).hide();
-    $( "#boom-content" ).show();
+    if (jugChallenge.weighFiveLitreJug() == 4) {
+      $( document.body ).removeAttr("bgcolor");
+      $( document.body ).attr("bgcolor","Lime");
+      $( "#challenge-content" ).hide();
+      $( "#homepage-content" ).show();
+      $( "#challenge-play-content" ).hide();
+      $( "#congratulations-content" ).show();
+    } else {
+      $( document.body ).removeAttr("bgcolor");
+      $( document.body ).attr("background","./images/boom.png");
+      $( "#challenge-content" ).hide();
+      $( "#homepage-content" ).show();
+      $( "#challenge-play-content" ).hide();
+      $( "#boom-content" ).show();
+    }
   });
 
   $( "#tryagain-button" ).click(function( event ) {
     $( document.body ).removeAttr("background");
     $( document.body ).attr("background","./images/danger.png");
     $( "#boom-content" ).hide();
+    $( "#challenge-play-content" ).show();
+  });
+
+  $( "#tryagain-button2" ).click(function( event ) {
+    $( document.body ).removeAttr("background");
+    $( document.body ).attr("background","./images/danger.png");
+    $( "#congratulations-content" ).hide();
     $( "#challenge-play-content" ).show();
   });
 
