@@ -5,4 +5,11 @@ $( document ).ready(function() {
     $( this ).hide();
     $( "#challenge-content" ).show();
   });
+
+  $( "#scale-button" ).click(function( event ) {
+    $( "#challenge-content" ).hide();
+    $( "#homepage-content" ).show();
+    $( "#challenge-play-content" ).hide();
+    $( "#boom-content" ).show();
+  });
 });
