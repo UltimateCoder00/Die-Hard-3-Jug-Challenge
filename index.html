@@ -17,64 +17,164 @@
     <title>Die Hard or Live Hard Jug Challenge</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body background="./images/danger.png">
+  <!-- <body background="./images/danger.png"> -->
+  <body>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-    <h1 align="center" id="title">
-      <font size="200" color="red">
-        Die Hard or Live Hard Jug Challenge
-      </font>
-    </h1>
-
-    <section id="homepage-content">
-      <p align="center">
-        <font size="5" color="white">
-          <mark>
-            <strong>
-              Bruce solve this task:
-              You have to figure out how to get exactly
-              4 litres of water in a jug.
-              You have a tap with running water,
-              a 3 litre jug and a 5 litre jug.
-              There is no shortage of water in the tap,
-              but time is limited,
-              so you need to get to the answer in the
-              minimum number of steps.
-            </strong>
-          </mark>
+    <section id="challenge-play">
+      <h1 align="center" id="title">
+        <font size="200" color="red">
+          Die Hard or Live Hard Jug Challenge
         </font>
-      </p>
+      </h1>
 
-      <table align="center">
-        <tr>
-          <th>
-            <img align="center" src="./images/bruce.jpg" height="286" width="170">
-          </th>
-          <td>
-          </td>
-        </tr>
-      </table>
+      <section id="homepage-content">
+        <p align="center">
+          <font size="5" color="white">
+            <mark>
+              <strong>
+                Bruce solve this task:
+                You have to figure out how to get exactly
+                4 litres of water in a jug.
+                You have a tap with running water,
+                a 3 litre jug and a 5 litre jug.
+                There is no shortage of water in the tap,
+                but time is limited,
+                so you need to get to the answer in the
+                minimum number of steps.
+              </strong>
+            </mark>
+          </font>
+        </p>
 
-      <table align="center">
-        <tr>
-          <td align="center">
-            <p>
-              <font size="10" color="black">
-                <mark>
-                  START
-                </mark>
+        <table align="center">
+          <tr>
+            <th>
+              <img align="center" src="./images/bruce.jpg" height="286" width="170">
+            </th>
+            <td>
+            </td>
+          </tr>
+        </table>
+
+        <table align="center">
+          <tr>
+            <td align="center">
+              <p>
+                <font size="10" color="black">
+                  <mark>
+                    START
+                  </mark>
+                </font>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="start-button">
+                <img align="center" src="./images/start.png" height="190" width="192">
+              </button>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="challenge-content" style="display: none;">
+        <table align="center">
+          <tr>
+            <p align="center">
+              <font size="10" color="white">Jug 1: 3 Litre Jug</font>
+            </p>
+          </tr>
+          <tr>
+            <td align="center">
+              <p>
+                <font size="5" color="white">Full Up
+                </font>
+              </p>
+            </td>
+            <td align="center">
+              <p>
+                <font size="5" color="white">Empty
+                </font>
+              </p>
+            </td>
+            <td align="center">
+              <p>
+                <font size="5" color="white">Pour into Jug 2
+                </font>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img align="center" src="./images/tap.jpg" height="100" width="100">
+            </td>
+            <td>
+              <img align="center" src="./images/empty.png" height="90" width="92">
+            </td>
+            <td>
+              <img align="center" src="./images/pouring.jpg" height="90" width="92">
+            </td>
+          </tr>
+        </table>
+
+        <table align="center">
+          <tr>
+            <p align="center">
+              <font size="10" color="white">Jug 2: 5 Litre Jug
               </font>
             </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <button id="start-button">
-              <img align="center" src="./images/start.png" height="190" width="192">
-            </button>
-          </td>
-        </tr>
-      </table>
+          </tr>
+          <tr>
+            <td align="center">
+              <p>
+                <font size="5" color="white">Full Up
+                </font>
+              </p>
+            </td>
+            <td align="center">
+              <p>
+                <font size="5" color="white">Empty
+                </font>
+              </p>
+            </td>
+            <td align="center">
+              <p>
+                <font size="5" color="white">Pour into Jug 1
+                </font>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img align="center" src="./images/tap.jpg" height="100" width="100">
+            </td>
+            <td>
+              <img align="center" src="./images/empty.png" height="90" width="92">
+            </td>
+            <td>
+              <img align="center" src="./images/pouring.jpg" height="90" width="92">
+            </td>
+          </tr>
+        </table>
+
+        <table align="center">
+          <tr>
+            <td align="center">
+              <p>
+                <font size="10" color="white">Weigh
+                </font>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img align="center" src="./images/scale.png" height="190" width="192">
+            </td>
+          </tr>
+        </table>
+      </section>
     </section>
 
     <script src="js/JugChallenge.js"></script>
