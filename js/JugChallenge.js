@@ -31,4 +31,8 @@ $( document ).ready(function() {
   $( "#jug1empty-button" ).click(function( event ) {
     jugChallenge.emptyThreeLitreJug();
   });
+
+  $( "#jug1pouring-button" ).click(function( event ) {
+    jugChallenge.pourIntoFiveLitreJug();
+  });
 });
