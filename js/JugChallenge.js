@@ -9,6 +9,8 @@ $( document ).ready(function() {
   });
 
   $( "#scale-button" ).click(function( event ) {
+    jugChallenge.emptyThreeLitreJug();
+    jugChallenge.emptyFiveLitreJug();
     if (jugChallenge.weighFiveLitreJug() == 4) {
       $( document.body ).removeAttr("bgcolor");
       $( document.body ).attr("bgcolor","Lime");
