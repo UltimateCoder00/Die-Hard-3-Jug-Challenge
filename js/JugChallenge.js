@@ -27,4 +27,8 @@ $( document ).ready(function() {
   $( "#jug1tap-button" ).click(function( event ) {
     jugChallenge.fillThreeLitreJug();
   });
+
+  $( "#jug1empty-button" ).click(function( event ) {
+    jugChallenge.emptyThreeLitreJug();
+  });
 });
