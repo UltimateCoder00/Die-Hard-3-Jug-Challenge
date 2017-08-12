@@ -23,4 +23,8 @@ $( document ).ready(function() {
     $( "#boom-content" ).hide();
     $( "#challenge-play-content" ).show();
   });
+
+  $( "#jug1tap-button" ).click(function( event ) {
+    jugChallenge.fillThreeLitreJug();
+  });
 });
