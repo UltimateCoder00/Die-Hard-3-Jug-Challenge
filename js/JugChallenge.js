@@ -43,4 +43,8 @@ $( document ).ready(function() {
   $( "#jug2empty-button" ).click(function( event ) {
     jugChallenge.emptyFiveLitreJug();
   });
+
+  $( "#jug2pouring-button" ).click(function( event ) {
+    jugChallenge.pourIntoThreeLitreJug();
+  });
 });
