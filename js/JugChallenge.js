@@ -1,8 +1,8 @@
 $( document ).ready(function() {
   var jugChallenge = new JugChallenge();
 
-  $( "#homepage-content" ).click(function( event ) {
-    $( this ).hide();
+  $( "#start-button" ).click(function( event ) {
+    $( "#homepage-content" ).hide();
     $( document.body ).removeAttr("background");
     $( document.body ).attr("bgcolor","black");
     $( "#challenge-content" ).show();
