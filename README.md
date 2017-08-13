@@ -4,7 +4,7 @@
 - [Summary](#summary)
 - [Scenario](#scenario)
 - [Installation](#installation)
-- [App Screen Shots](#app-screen-shots)
+- [Screen Shots](#screen-shots)
 - [Test Driven Development (TDD)](#tdd)
 - [Author](#author)
 - [License](#license)
@@ -54,7 +54,7 @@ In your browser type the following url:
 ```
 http://localhost:5000/
 ```
-### <a name="app">App Screen Shots</a>
+### <a name="screen-shots">Screen Shots</a>
 The following are the screen shots of all the pages for this app:
 
 ##### Homepage
