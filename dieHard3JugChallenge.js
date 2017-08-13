@@ -6,7 +6,7 @@ var server = httpServer.createServer({root: pathToHtmlAndJsFiles
 });
 
 
-console.log("Server running at localhost:8000")
+console.log("Server running at localhost:5000")
 console.log("'ctrl-c' to end")
 
-server.listen(8000);
+server.listen(5000);
