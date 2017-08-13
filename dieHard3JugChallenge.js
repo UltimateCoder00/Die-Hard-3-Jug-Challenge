@@ -21,8 +21,6 @@ app.use(express.static(__dirname + '/'));
 
 app.get('/', function(request, response) {
   response.render('index');
-  response.render('./js/JugChallenge');
-  response.render('./js/JugChallenge');
 });
 
 app.listen(app.get('port'), function() {
