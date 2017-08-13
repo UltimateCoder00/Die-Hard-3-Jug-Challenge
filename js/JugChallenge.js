@@ -46,7 +46,7 @@ $( document ).ready(function() {
     $( "#empty-jug1" ).hide();
     $( "#half-full-jug1" ).hide();
     $( "#full-jug1" ).show();
-    $("#jug1-litres").text("3 Litres");
+    $("#jug1-litres").text("The Jug Is Full");
     jugChallenge.fillThreeLitreJug();
   });
 
@@ -54,7 +54,7 @@ $( document ).ready(function() {
     $( "#empty-jug1" ).show();
     $( "#half-full-jug1" ).hide();
     $( "#full-jug1" ).hide();
-    $("#jug1-litres").text("0 Litres");
+    $("#jug1-litres").text("The Jug Is Empty");
     jugChallenge.emptyThreeLitreJug();
   });
 
@@ -62,7 +62,7 @@ $( document ).ready(function() {
     $( "#empty-jug1" ).hide();
     $( "#half-full-jug1" ).show();
     $( "#full-jug1" ).hide();
-    $("#jug1-litres").text("??? Litres");
+    $("#jug1-litres").text("The Jug Has ??? Litres");
     jugChallenge.pourIntoFiveLitreJug();
   });
 
@@ -70,7 +70,7 @@ $( document ).ready(function() {
     $( "#empty-jug2" ).hide();
     $( "#half-full-jug2" ).hide();
     $( "#full-jug2" ).show();
-    $("#jug2-litres").text("5 Litres");
+    $("#jug2-litres").text("The Jug Is Full");
     jugChallenge.fillFiveLitreJug();
   });
 
@@ -78,7 +78,7 @@ $( document ).ready(function() {
     $( "#empty-jug2" ).show();
     $( "#half-full-jug2" ).hide();
     $( "#full-jug2" ).hide();
-    $("#jug2-litres").text("0 Litres");
+    $("#jug2-litres").text("The Jug Is Empty");
     jugChallenge.emptyFiveLitreJug();
   });
 
@@ -86,7 +86,7 @@ $( document ).ready(function() {
     $( "#empty-jug2" ).hide();
     $( "#half-full-jug2" ).show();
     $( "#full-jug2" ).hide();
-    $("#jug2-litres").text("??? Litres");
+    $("#jug2-litres").text("The Jug Has ??? Litres");
     jugChallenge.pourIntoThreeLitreJug();
   });
 });
