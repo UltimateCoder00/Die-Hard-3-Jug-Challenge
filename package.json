@@ -19,6 +19,7 @@
   "author": "Hasan Sonmez",
   "license": "MIT",
   "dependencies": {
+    "express": "4.15.4",
     "http-server": "^0.9.0",
     "requirejs": "^2.3.3"
   },
