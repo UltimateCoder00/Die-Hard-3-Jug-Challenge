@@ -3,6 +3,7 @@
 ### Contents
 - [Summary](#summary)
 - [Scenario](#scenario)
+- [Heroku Link](#heroku-link)
 - [Installation](#installation)
 - [Screen Shots](#screen-shots)
 - [Test Driven Development (TDD)](#tdd)
@@ -16,6 +17,9 @@ In the movie Die Hard 3, Bruce Willis is given this task: he has to figure out h
 ### <a name="scenario">Scenario</a>
 Welcome Bruce I want you to solve a task, you will either Die Hard or Live Hard, it's in your hands. You are given two jugs with capacities of 3 & 5 litres, a scale and accessible tap with running water to fill the jugs. Your challenge is to figure out exactly how to get 4 litres of water in a jug.
 There is no shortage of water in the tap, but we got a surprise in hand, so you might need to consider how to get to the answer in the minimum number of steps.
+
+### <a name="heroku-link">Heroku Link</a>
+[http://die-hard-3-jug-challenge.herokuapp.com/](http://die-hard-3-jug-challenge.herokuapp.com/)
 
 ### <a name="installation">Installation</a>
 Follow the instructions below to install and setup all the tools to run the project app.
