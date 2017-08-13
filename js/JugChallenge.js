@@ -46,47 +46,67 @@ $( document ).ready(function() {
     $( "#empty-jug1" ).hide();
     $( "#half-full-jug1" ).hide();
     $( "#full-jug1" ).show();
-    $("#jug1-litres").text("The Jug Is Full");
     jugChallenge.fillThreeLitreJug();
+    jugStatusText();
   });
 
   $( "#jug1empty-button" ).click(function( event ) {
     $( "#empty-jug1" ).show();
     $( "#half-full-jug1" ).hide();
     $( "#full-jug1" ).hide();
-    $("#jug1-litres").text("The Jug Is Empty");
     jugChallenge.emptyThreeLitreJug();
+    jugStatusText();
   });
 
   $( "#jug1pouring-button" ).click(function( event ) {
     $( "#empty-jug1" ).hide();
     $( "#half-full-jug1" ).show();
     $( "#full-jug1" ).hide();
-    $("#jug1-litres").text("The Jug Has ??? Litres");
     jugChallenge.pourIntoFiveLitreJug();
+    jugStatusText();
   });
 
   $( "#jug2tap-button" ).click(function( event ) {
     $( "#empty-jug2" ).hide();
     $( "#half-full-jug2" ).hide();
     $( "#full-jug2" ).show();
-    $("#jug2-litres").text("The Jug Is Full");
     jugChallenge.fillFiveLitreJug();
+    jugStatusText();
   });
 
   $( "#jug2empty-button" ).click(function( event ) {
     $( "#empty-jug2" ).show();
     $( "#half-full-jug2" ).hide();
     $( "#full-jug2" ).hide();
-    $("#jug2-litres").text("The Jug Is Empty");
     jugChallenge.emptyFiveLitreJug();
+    jugStatusText();
   });
 
   $( "#jug2pouring-button" ).click(function( event ) {
     $( "#empty-jug2" ).hide();
     $( "#half-full-jug2" ).show();
     $( "#full-jug2" ).hide();
-    $("#jug2-litres").text("The Jug Has ??? Litres");
     jugChallenge.pourIntoThreeLitreJug();
+    jugStatusText();
   });
+
+  function jugStatusText() {
+    if (jugChallenge.isThreeLitreJugFull()) {
+      $("#jug1-litres").text("The Jug Is Full");
+    } else if (jugChallenge.isThreeLitreJugEmpty()) {
+      $("#jug1-litres").text("The Jug Is Empty");
+    }
+    else {
+      $("#jug1-litres").text("The Jug Has ??? Litres");
+    }
+
+    if (jugChallenge.isFiveLitreJugFull()) {
+      $("#jug2-litres").text("The Jug Is Full");
+    } else if (jugChallenge.isFiveLitreJugEmpty()) {
+      $("#jug2-litres").text("The Jug Is Empty");
+    }
+    else {
+      $("#jug2-litres").text("The Jug Has ??? Litres");
+    }
+  }
 });
