@@ -1,5 +1,6 @@
 $( document ).ready(function() {
   var jugChallenge = new JugChallenge();
+  var x;
 
   $( "#start-button" ).click(function( event ) {
     $( "#homepage-content" ).hide();
@@ -16,6 +17,26 @@ $( document ).ready(function() {
       $( "#homepage-content" ).show();
       $( "#challenge-play-content" ).hide();
       $( "#congratulations-content" ).show();
+
+      var countDownTimerFrom24Hours = new Date().getTime() + (24*60*60*1000);
+        x = setInterval(function() {
+          var timeNow = new Date().getTime();
+
+          var countDownTimer = countDownTimerFrom24Hours - timeNow;
+
+          var hours = Math.floor((countDownTimer % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((countDownTimer % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((countDownTimer % (1000 * 60)) / 1000);
+
+          document.getElementById("24_Hour-Count-Down-Timer").innerHTML = hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+          // If the count down is over, write some text
+          if (countDownTimer < 0) {
+              clearInterval(x);
+              document.getElementById("24_Hour-Count-Down-Timer").innerHTML = "EXPIRED";
+          }
+        }, 1000);
     } else {
       $( document.body ).removeAttr("bgcolor");
       $( document.body ).attr("background","./images/boom.png");
@@ -36,6 +57,7 @@ $( document ).ready(function() {
   });
 
   $( "#tryagain-button2" ).click(function( event ) {
+    clearInterval(x);
     $( document.body ).removeAttr("background");
     $( document.body ).attr("background","./images/danger.png");
     $( "#congratulations-content" ).hide();
