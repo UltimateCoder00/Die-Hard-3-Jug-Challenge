@@ -9,13 +9,16 @@
 - [License](#license)
 
 ### <a name="summary">Summary</a>
+In the movie Die Hard 3, Bruce Willis is given this task: he has to figure out how to get exactly 4 litres of water in a jug. He has a tap with running water, a 3 litre jug and a 5 litre jug. There is no shortage of water in the tap, but time is limited, so he needs to get to the answer in the minimum number of steps.
+
 
 ### <a name="description">Description</a>
+
 
 ### <a name="installation">Installation</a>
 Follow the instructions below to install and setup all the tools to run the project app.
 
-##### 1) Install project to Local Device
+##### 1) Install Project to Local Device
 To install the code on your local device, do the following:
 
 * Clone repository
