@@ -4,25 +4,30 @@
   "main": "index.js",
   "description": "A javascript app to solve the die hard 3 jug challenge",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dieHard3JugChallenge.js",
+    "build": "node dieHard3JugChallenge.js",
+    "test": "node dieHard3JugChallenge.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UltimateCoder00/Die-Hard-3-Jug-Challenge"
+    "url": "git+https://github.com/UltimateCoder00/Die-Hard-3-Jug-Challenge.git"
   },
   "keywords": [
     "news",
     "guardian"
   ],
-  "author": "",
+  "author": "Hasan Sonmez",
   "license": "MIT",
   "dependencies": {
     "http-server": "^0.9.0",
     "requirejs": "^2.3.3"
   },
-  "scripts": {
-    "start": "node dieHard3JugChallenge.js",
-    "build": "node dieHard3JugChallenge.js",
-    "test": "node dieHard3JugChallenge.js"
-  }
+  "bugs": {
+    "url": "https://github.com/UltimateCoder00/Die-Hard-3-Jug-Challenge/issues"
+  },
+  "homepage": "https://github.com/UltimateCoder00/Die-Hard-3-Jug-Challenge#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
