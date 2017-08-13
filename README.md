@@ -51,6 +51,12 @@ http://localhost:5000/
 ```
 
 ### <a name="tdd">Test Driven Development (TDD)</a>
+This project was developed using Jasmine and TDD. To run the tests, in the terminal type:
+```
+open SpecRunner.html
+```
+This will return the following output:
+![](./images/jasmine-test.png?raw=true)
 
 ### <a name="author">Author</a>
 - [Hasan Sonmez](https://github.com/UltimateCoder00)
