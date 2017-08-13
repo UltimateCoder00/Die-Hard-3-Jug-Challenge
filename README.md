@@ -10,7 +10,7 @@
 - [License](#license)
 
 ### <a name="summary">Summary</a>
-In the movie Die Hard 3, Bruce Willis is given this task: he has to figure out how to get exactly 4 litres of water in a jug. He has a tap with running water, a 3 litre jug and a 5 litre jug. There is no shortage of water in the tap, but time is limited, so he needs to get to the answer in the minimum number of steps.
+In the movie Die Hard 3, Bruce Willis is given this task: he has to figure out how to get exactly 4 litres of water in a jug. He has a tap with running water, a 3 litre jug and a 5 litre jug. There is no shortage of water in the tap, but time is limited, so he needs to get to the answer in the minimum number of steps. In this prjoect a javascript app is developed to stimulate the Bruce Willis jug challenge.
 
 
 ### <a name="scenario">Scenario</a>
@@ -67,7 +67,7 @@ Here the user is given a description of the challenge and is required to click t
 
 ##### Challenge Page
 Here the user is informed that a countdown timer of 5 minutes has started and they have to complete the challenge in this time frame.
-Additionally, a description is given of all the tools are have and can use. They are required to click the images and complete the challenge by submitting by clicking the weigh jug 2 button.
+Additionally, a description of all the tools the user has is given. They are required to click the images and complete the challenge by submitting with clicking the weigh jug 2 button.
 ![](./images/challenge-page.png?raw=true)
 
 ##### Unsuccessful Completion of Challenge Page
