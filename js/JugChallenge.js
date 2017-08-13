@@ -57,6 +57,7 @@ $( document ).ready(function() {
 
     jugChallenge.emptyThreeLitreJug();
     jugChallenge.emptyFiveLitreJug();
+    updateJugStatusImageAndText();
   });
 
   function TwentyFourHourTimer() {
