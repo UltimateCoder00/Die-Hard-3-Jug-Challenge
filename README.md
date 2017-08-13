@@ -55,10 +55,23 @@ In your browser type the following url:
 http://localhost:5000/
 ```
 ### <a name="app">App Screen Shots</a>
+The following are the screen shots of all the pages for this app:
 
+##### Homepage
+Here the user is given a description of the challenge and is required to click the start button to start the challenge.
 ![](./images/homepage.png?raw=true)
+
+##### Challenge Page
+Here the user is informed that a countdown timer of 5 minutes has started and they have to complete the challenge in this time frame.
+Additionally, a description is given of all the tools are have and can use. They are required to click the images and complete the challenge by submitting by clicking the weigh jug 2 button.
 ![](./images/challenge-page.png?raw=true)
+
+##### Unsuccessful Completion of Challenge Page
+Here the user is informed that they haven't completed the challenge correctly and are able to replay the challenge by clicking the try again button.
 ![](./images/boom-page.png?raw=true)
+
+##### Successful Completion of Challenge Page
+Here the user is informed that they have completed the challenge correctly and are able to replay the challenge by clicking the play again button. They are also informed that a new challenge will appear in 24 hours.
 ![](./images/congratulations-page.png?raw=true)
 
 ### <a name="tdd">Test Driven Development (TDD)</a>
