@@ -49,6 +49,10 @@ or
 ```
 npm start
 ```
+or
+```
+open index.html
+```
 ##### 5) Open in your browser
 In your browser type the following url:
 ```
