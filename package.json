@@ -1,0 +1,23 @@
+{
+  "name": "die-hard-3-jug-challenge",
+  "version": "0.6.9",
+  "main": "index.js",
+  "description": "A javascript app to solve the die hard 3 jug challenge",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UltimateCoder00/Die-Hard-3-Jug-Challenge"
+  },
+  "keywords": [
+    "news",
+    "guardian"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "requirejs": "^2.3.3"
+  }
+}
