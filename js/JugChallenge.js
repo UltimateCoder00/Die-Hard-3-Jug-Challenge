@@ -7,6 +7,25 @@ $( document ).ready(function() {
     $( document.body ).removeAttr("background");
     $( document.body ).attr("bgcolor","black");
     $( "#challenge-content" ).show();
+
+    var countDownTimerFrom5Minutes = new Date().getTime() + (5*60*1000);
+      x = setInterval(function() {
+        var timeNow = new Date().getTime();
+
+        var countDownTimer = countDownTimerFrom5Minutes - timeNow;
+
+        var minutes = Math.floor((countDownTimer % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((countDownTimer % (1000 * 60)) / 1000);
+
+        document.getElementById("5-Minute-Count-Down-Timer").innerHTML = minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (countDownTimer < 0) {
+            clearInterval(x);
+            jugChallenge.emptyFiveLitreJug();
+            $( "#scale-button" ).click();
+        }
+      }, 1000);
   });
 
   $( "#scale-button" ).click(function( event ) {
@@ -28,13 +47,13 @@ $( document ).ready(function() {
           var minutes = Math.floor((countDownTimer % (1000 * 60 * 60)) / (1000 * 60));
           var seconds = Math.floor((countDownTimer % (1000 * 60)) / 1000);
 
-          document.getElementById("24_Hour-Count-Down-Timer").innerHTML = hours + "h "
+          document.getElementById("24-Hour-Count-Down-Timer").innerHTML = hours + "h "
           + minutes + "m " + seconds + "s ";
 
           // If the count down is over, write some text
           if (countDownTimer < 0) {
               clearInterval(x);
-              document.getElementById("24_Hour-Count-Down-Timer").innerHTML = "EXPIRED";
+              document.getElementById("24-Hour-Count-Down-Timer").innerHTML = "EXPIRED";
           }
         }, 1000);
     } else {
