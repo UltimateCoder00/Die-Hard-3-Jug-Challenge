@@ -2,7 +2,7 @@
 
 ### Contents
 - [Summary](#summary)
-- [Description](#description)
+- [Scenario](#scenario)
 - [Installation](#installation)
 - [Test Driven Development (TDD)](#tdd)
 - [Author](#author)
@@ -12,8 +12,9 @@
 In the movie Die Hard 3, Bruce Willis is given this task: he has to figure out how to get exactly 4 litres of water in a jug. He has a tap with running water, a 3 litre jug and a 5 litre jug. There is no shortage of water in the tap, but time is limited, so he needs to get to the answer in the minimum number of steps.
 
 
-### <a name="description">Description</a>
-
+### <a name="scenario">Scenario</a>
+Welcome Bruce I want you to solve a task, you will either Die Hard or Live Hard, it's in your hands. You are given two jugs with capacities of 3 & 5 litres, a scale and accessible tap with running water to fill the jugs. Your challenge is to figure out exactly how to get 4 litres of water in a jug.
+There is no shortage of water in the tap, but we got a surprise in hand, so you might need to consider how to get to the answer in the minimum number of steps.
 
 ### <a name="installation">Installation</a>
 Follow the instructions below to install and setup all the tools to run the project app.
